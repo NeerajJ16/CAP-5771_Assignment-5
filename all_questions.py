@@ -115,16 +115,16 @@ def question6():
     answers = {}
 
     # type: eval_float
-    answers['(a) C1-TPR'] = 'p'
+    answers['(a) C1-TPR'] = "p"
 
     # type: eval_float
-    answers['(a) C2-TPR'] = 0.2
+    answers['(a) C2-TPR'] = "2p"
 
     # type: eval_float
-    answers['(a) C1-FPR'] = 0.1
+    answers['(a) C1-FPR'] = "p"
 
     # type: eval_float
-    answers['(a) C2-FPR'] = 0.2
+    answers['(a) C2-FPR'] = "2p"
 
     # type: string
     # choices: ['yes', 'no']
