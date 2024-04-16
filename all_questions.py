@@ -249,16 +249,16 @@ def question10():
 
     # type: string
     # choices: ['F1', 'TPR/FPR']
-    answers['(c) Which evaluation measure to use between the two tests?'] = "F1"
+    answers['(c) Which evaluation measure to use between the two tests?'] = "TPR/FPR"
 
     # type: explain_string
     answers['(c) Which evaluation measure? Explain'] = (
-        "The F1-Score is chosen as it provides a more balanced view of a test's accuracy by combining precision and recall, making it suitable for evaluating clinical tests where both false positives and false negatives have significant consequences."
+        "When the significant cost of missing a diagnosis (false negative) outweighs the risks of false positives in a medical context, TPR/FPR is the best measure for evaluating cancer detection tests T1 and T2, emphasizing the importance of the test's ability to correctly identify genuine positives."
     )
 
     # type: explain_string
     answers['(d) Example scenario where you would reverse choise in (c)'] = (
-        "In a scenario where identifying as many true cases as possible is more crucial than avoiding false alarms, such as in early screening for a highly dangerous disease, TPR/FPR might be preferred over F1 because it emphasizes the ratio of true positives to false positives, prioritizing sensitivity over precision."
+        "If the population being examined has a high likelihood of not having cancer (a very low prevalence), you may prefer the F-measure to TPR/FPR. False positives can have major effects, such as psychological discomfort, exposure to dangerous tests, or increased financial costs due to unnecessary diagnostic treatments. In this scenario, the F-measure is recommended because it takes into account both true and false positives. Furthermore, to ensure that the test's precision is as high as possible in order to reduce the number of false positives, you can prioritize the F-measure if the follow-up procedures following a positive test are costly, invasive, or dangerous."
     )
 
     return answers
