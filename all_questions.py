@@ -18,7 +18,7 @@ def question1():
 
     # type: float
     # Calculate the probability.
-    answers['(c)'] = 0.008
+    answers['(c)'] = 0.08
     return answers
 
 
