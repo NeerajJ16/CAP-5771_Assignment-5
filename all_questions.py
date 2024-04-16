@@ -33,7 +33,7 @@ def question2():
     answers['(a) B'] = False
 
     # type: bool
-    answers['(a) C'] = False
+    answers['(a) C'] = True
 
     # type: bool
     answers['(a) D'] = True
